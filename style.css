@@ -1,0 +1,134 @@
+
+/* Variables */
+
+
+/* Main Elements */
+body {
+    background: linear-gradient(to bottom, #97D9E1, #D9AFD9);
+    background-attachment: fixed;
+    font-family: 'Lato', sans-serif;
+}
+
+main {
+    background-color: white;
+    border-radius: 25px;
+    grid-column: 2 / 8;
+    padding: 20px 20px 20px 20px;
+}
+
+footer {
+    color: white;
+    grid-column: 4;
+    padding-top: 10px;
+    text-align: right;
+}
+
+h2 {
+    font-size: 28px;
+    border-bottom: 2px solid black;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Navigation */
+nav {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul {
+    list-style-type: none;
+    text-decoration: none;
+    grid-column: 1;
+}
+
+nav ul li {
+    margin: 10px 0;
+    padding: 10px 0 10px 10px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover, nav ul li:hover a {
+    background-color: white;
+    color: #555555;
+}
+
+img {
+    height: 274px;
+    width: 180px;
+}
+
+/* IDs */
+#wrapper {
+    display: grid;
+    grid-template-columns: minmax(0,1fr) repeat(6, minmax(0,175px)) minmax(0,1fr);
+    padding-top: 30px;
+}
+
+#logo {
+    grid-column: 1;
+    width: 100px;
+    height: 106px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Classes */
+.side {
+    float: right;
+}
+
+
+
+/* Media Query - Small Screen */
+@media only screen and (max-width: 960px) {
+
+    main {
+        margin: 0px;
+        border-radius: 0px;
+    }
+
+    footer {
+        text-align: center;
+        height: 50px;
+        padding-top: 30px;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 10px 10px 10px 10px;
+        margin-bottom: 0px;
+        border-radius: 15px 15px 0px 0px;
+    }
+    
+
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .side {
+        height: 100%;
+        width: 100%;
+        padding: 5px 0px 15px 0px;
+    }
+
+
+}
